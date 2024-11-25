@@ -82,12 +82,23 @@ nav ul {
  .homepage {
     width: 80vw;
     margin: 0 auto;
+    align-items: center; 
  }
+
  .majors {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
     gap: 2rem;
     padding: 75px 0;
+ }
+
+ .project-title {
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    color: #004750;
  }
 
  .project-text {
@@ -98,21 +109,47 @@ nav ul {
 
  .product-image {
     grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
  }
 
+ .majors .product-image:nth-child(1) {
+    background-color: #E3E9FE;
+}
+
+
+
  .product-image img {
-    width: 500px;
+    width: 200px;
     height: auto;
  }
 
  .tabs {
-    background-color: #F4F5FB ;
-    display: block;
-    width: 300px;
+    display: flex;
+    gap: 20px;
+ }
+
+ .role a {
+    background-color: #F0F3F5;
+    padding: 8px 15px;
+    color: #68899C;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+ }
+
+ .product-description {
+    font-size: 20px;
  }
 
  footer {
-    background-color: #E1E7EB;
+    background-color:#F0F3F5;
     display: block;
     margin: 0 auto;
 
@@ -122,4 +159,15 @@ nav ul {
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
+ }
+
+ .view-project {
+    background-color: #004750;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
  }

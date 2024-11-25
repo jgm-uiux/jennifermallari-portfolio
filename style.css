@@ -1,12 +1,15 @@
+/* gf #E3E9FE 
+ct #FEF1E8
+sa #C3CDD1 */
+
 body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
     background-color: white;
+    color: #404040;
 }
-
-
 
 .navigation {
     display: flex;
@@ -58,20 +61,25 @@ nav ul {
 
 }
 
-.hero-content p {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .contents ul li a {
     text-decoration: none;
-    color: #536E7D;
+    color: #FFFFFF;
     font-size: 18px;
 }
 
 .name{
     font-size: 60px;
-    color: #003940;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+.bio {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.location {
+    font-size: 16px;
 }
 
 .project-title {
@@ -89,22 +97,24 @@ nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    gap: 2rem;
+    gap: 200px;
     padding: 75px 0;
  }
 
  .project-title {
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    margin: 20px 0px;
 
-    color: #004750;
+    color: #404040;
  }
 
  .project-text {
     grid-column: 1/2;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    /* width: 80%; */
  }
 
  .product-image {
@@ -146,6 +156,7 @@ nav ul {
 
  .product-description {
     font-size: 20px;
+    margin: 20px 0;
  }
 
  footer {
@@ -159,15 +170,33 @@ nav ul {
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 200px;
+    width: 80vw;
+    margin: 0 auto;
+ }
+
+ .connect {
+    width: 100%;
+    height: 100%;
+ }
+
+ .contact {
+    font-size: 24px;
+ }
+
+ .copyright {
+    text-align: center;
  }
 
  .view-project {
-    background-color: #004750;
+    background-color: #68899C;
     border: none;
     padding: 10px 20px;
     color: white;
     text-transform: uppercase;
     border-radius: 5px;
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    margin: 0 0 30px 0;
  }

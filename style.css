@@ -101,14 +101,23 @@ nav ul {
     letter-spacing: 1px;
     margin: 20px 0px;
 
-    /* color: #404040; */
-    color: #1B1B1B;
+    color: #404040;
 }
 
 .project-text {
     grid-column: 1/2;
     justify-content: left;
     align-items: center;
+}
+
+.majors:nth-of-type(2) .product-image {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.majors:nth-of-type(2) .project-text {
+    grid-column: 2/2;
+    grid-row: 1;
 }
 
 .tabs {

@@ -242,3 +242,25 @@ footer {
             padding: 75px 0;
     }
 }
+
+
+/* scroll down */
+.scroll-down {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #68899C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.scroll-down:hover {
+    background-color: #55707f;
+    transform: translateY(-2px);
+}

@@ -9,6 +9,13 @@ body {
 
 
 /* NAVIGATION */
+
+/* .cover {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+} */
+
 .penguin-logo img{
     width: 75px;
     height: auto;
@@ -34,4 +41,21 @@ body {
     text-decoration: none;
     font-size: 18px;
     color: #68899C;
+}
+
+.cover-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }

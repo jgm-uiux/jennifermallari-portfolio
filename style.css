@@ -195,7 +195,7 @@ nav ul {
 .role a {
     background-color: #F0F3F5;
     padding: 8px 15px;
-    color: #004750;
+    color: #536E7D;
     text-decoration: none;
     border-radius: 5px;
     text-transform: uppercase;
@@ -209,7 +209,7 @@ nav ul {
 }
 
 .view-project {
-    background-color: #004750;
+    background-color: #536E7D;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -225,7 +225,7 @@ nav ul {
 }
 
 .view-project:hover {
-    background-color: #68899C
+    background-color: #004750;
 }
 
 .product-image {
@@ -344,7 +344,7 @@ footer {
 /* scroll down */
 .scroll-down {
     display: inline-block;
-    margin-top: 250px;
+    margin-top: 50px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;

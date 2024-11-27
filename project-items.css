@@ -46,6 +46,10 @@ body {
     z-index: 2;
 }
 
+.projects-nav ul li a:hover {
+    color: #68899C;
+}
+
 /* COVER */
 
 .cover {
@@ -200,6 +204,10 @@ footer {
         font-size: 20px;
 
         color:#68899C;
+    }
+
+    .container-nav ul li a:hover {
+        color: #004750;
     }
 
     .main-content {

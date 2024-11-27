@@ -1,6 +1,15 @@
-<script>
-    document.querySelector(".scroll-down").addEventListener("click", () => {
-        const nextSection = document.getElementById("next-section");
-        nextSection.scrollIntoView({ behavior: "smooth" });
-    });
-</script>
+document.getElementById("scroll-down-btn").addEventListener("click", smoothScroll);
+
+function smoothScroll() {
+    const element = document.getElementById("next-section");
+    element.scrollIntoView({ behavior: 'smooth' });
+}
+
+function showMenu() {
+    document.querySelector('.nav-list-container').classList.add("open");
+  }
+  
+  function closeMenu() {
+    document.querySelector('.nav-list-container').classList.remove("open");
+  }
+  

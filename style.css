@@ -41,10 +41,68 @@ nav ul {
     gap: 32px;
 }
 
-.contents ul li a {
+.projects-nav {
+    display: none;
+}
+
+.projects-nav ul li a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #FFFFFF ;
     font-size: 18px;
+}
+ß
+.projects-nav ul li a:hover {
+    color: #004750;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+.nav-list-container {
+    display: none;
+    font-size: 24px;
+}
+
+.nav-list-container.open {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  
+    background-color: #E3EEF5;
+}
+  
+.nav-list-container.open ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 16px;
+  
+    text-align: center;
+}
+  
+.nav-list-container.open a {
+    color: #0069b9;
+    line-height: 2;
+}
+  
+.nav-list-container.open a:hover {
+    color: #ACDC76;
+}
+  
+.nav-list-container.open a:active {
+    color: black;
+} 
+  
+.nav-list-container.open #primary-nav-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
 }
 
 .hero-video {
@@ -116,7 +174,7 @@ nav ul {
 .project-text {
     grid-column: 1/2;
     justify-content: left;
-    align-items: center;
+    align-self: center;
 }
 
 .majors:nth-of-type(2) .product-image {
@@ -164,6 +222,10 @@ nav ul {
     font-size: 16px;
     letter-spacing: 2px;
     color: white;
+}
+
+.view-project:hover {
+    background-color: #68899C
 }
 
 .product-image {
@@ -229,6 +291,10 @@ footer {
     text-decoration: none;
 }
 
+.links a:hover {
+    color: #004750;
+}
+
 .copyright {
     text-align: left;
     max-width: 90vw;
@@ -239,10 +305,30 @@ footer {
 
 
 /* MEDIA QUERY */
+
 @media screen and (min-width: 800px) {
+
+    .projects-nav {
+        display: block;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
     .majors {
         display: grid;
-        gap: 200px;
+        gap: 50px;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+
+    .majors {
+        display: grid;
+        gap: 150px;
         grid-template-columns: 1fr 1fr ;
     }
 
@@ -255,11 +341,10 @@ footer {
     }
 }
 
-
 /* scroll down */
 .scroll-down {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 250px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;

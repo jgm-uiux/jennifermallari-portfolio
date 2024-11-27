@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/b479c2d499.js" crossorigin="anonymous"></script>
+    <script src="function.js" defer></script>
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -24,13 +25,25 @@
             </h1>
 
         
-            <nav class="contents">
+            <nav class="projects-nav">
                 <ul>
                     <li><a href="projects.html">Projects</a></li>
                     <!-- <li><a href="#gallery">Gallery</a></li> -->
                     <li><a href="#about">About</a></li>
                 </ul>
             </nav>
+
+            <div class="menu-button">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                <div class="nav-list-container" onclick="closeMenu()">
+                    <button id="primary-nav-close" onclick="closeMenu()">&times;</button>
+                    <ul>
+                        <li><a href="projects.html">Projects</a></li>
+                        <!-- <li><a href="#gallery">Gallery</a></li> -->
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <video class="hero-video" autoplay muted loop playsinline>
@@ -42,7 +55,7 @@
             <p class="bio">UI/UX Designer with Satellite Operations background.</p>
             <p class="location">based in Vancouver, BC</p>
 
-            <button class="scroll-down">Scroll Down</button>
+            <button class="scroll-down" id="scroll-down-btn"><i class="fa-solid fa-chevron-down"></i></button>
         </div>
     </header>
 
@@ -61,7 +74,7 @@
                         <a href="">UI/UX Design</a>
                     </div>
                 </div>
-                <p class="product-description">Glucofit is a mobile app for people who may be prediabetic or already diabetic to help them monitor their blood sugar level through automated glucose logging and personalized insights on food and lifestyle.</p>
+                <p class="product-description">Glucofit is a mobile app for people with diabetes to help them monitor their blood sugar level through automated glucose logging and personalized insights and gamification to keep users motivated.</p>
                 
                 <button class="view-project">
                     <a href="../projects/glucofit.html">View Project</a>
@@ -133,8 +146,8 @@
                 <h3 class="contact">Let's connect!</h3>
                 <div class="links">
                     <a href="https://www.linkedin.com/in/jennifergmallari/">
-                        <i aria-hidden="true" class="fa-brands fa-linkedin" title="Linkedin"></i>
-                            <span class="fa-sr-only">Linkedin</span>
+                        <i aria-hidden="true" title="Linkedin"></i>
+                            <span>Linkedin</span>
                     </a>
                     <a href="">Resume</a>
                 </div>

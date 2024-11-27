@@ -276,3 +276,16 @@ footer {
     background-color: #55707f;
     transform: translateY(-2px);
 }
+
+
+@media screen and (min-width: 1000px) {
+    .navigation {
+        max-width: 80vw;
+    }
+    .homepage{
+        max-width: 80vw;
+    }
+    .connect-wrapper {
+        max-width: 80vw;
+    }
+}

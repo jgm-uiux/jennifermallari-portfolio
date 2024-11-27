@@ -43,10 +43,7 @@ body {
 
 /* MAIN */
 .project-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    width: 90vw;
+    max-width: 90vw;
     margin: 0 auto;
     align-items: center;
 
@@ -58,44 +55,44 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 350px;
 }
 
 .project-image img {
-    width: 140px;
+    width: 100px;
     height: auto;
 
 }
 
-.project-image:nth-of-type(5) img {
-    width: 180px;
+.project-link:nth-of-type(5) img {
+    width: 120px;
 }
 
-.project-image:nth-of-type(6) img {
-    width: 220px;
+.project-link:nth-of-type(6) img {
+    width: 160px;
 }
 
-.project-link:nth-of-type(1) {
+.project-link:nth-of-type(1) .project-image {
     background-color: #E3E9FE;
 }
 
-.project-link:nth-of-type(2) {
+.project-link:nth-of-type(2) .project-image {
     background-color: #FEF1E8;
 }
 
-.project-link:nth-of-type(3) {
+.project-link:nth-of-type(3) .project-image{
     background-color: #F9DAE0;
 }
 
-.project-link:nth-of-type(4) {
+.project-link:nth-of-type(4) .project-image{
     background-color: #F0F3F5;
 }
 
-.project-link:nth-of-type(5) {
+.project-link:nth-of-type(5) .project-image{
     background-color: #9A999C;
 }
 
-.project-link:nth-of-type(6) {
+.project-link:nth-of-type(6) .project-image{
     background-color: #B1A09F;
 }
 
@@ -144,12 +141,66 @@ footer {
 }
 
 /* MEDIA QUERY */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
+    .project-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 350px;
+    }
+
     .connect-wrapper {
         display: grid;
         gap: 500px;
         grid-template-columns: 1fr 1fr;
         place-items: center;
         padding: 30px 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .project-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 500px;
+    }
+    .project-image img {
+        width: 140px;
+        height: auto;
+    }
+    
+    .project-link:nth-of-type(5) img {
+        width: 160px;
+    }
+    
+    .project-link:nth-of-type(6) img {
+        width: 210px;
+    }
+
+    .connect-wrapper {
+        display: grid;
+        gap: 500px;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding: 30px 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navigation {
+        max-width: 80vw;
+    }
+    .project-items {
+        max-width: 80vw;
+    }
+    .connect-wrapper {
+        max-width: 80vw;
     }
 }

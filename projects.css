@@ -108,7 +108,7 @@ body {
 
 /* Add the blur overlay and text using ::after */
 .project-link::after {
-    content: "Coming Soon"; /* The text to display */
+    content: "View project"; /* The text to display */
     position: absolute;
     top: 50%;
     left: 50%;

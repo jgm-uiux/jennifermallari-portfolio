@@ -27,7 +27,7 @@ body {
 }
 
 .penguin-logo img {
-    width: 75px;
+    width: 60px;
     height: auto;
 
 }
@@ -118,6 +118,42 @@ body {
 
     margin-bottom: 50px;
 }
+
+.competitive-analysis img {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.user-persona img {
+    width: 400px;
+    height: auto;
+}
+
+.container-design img {
+    width: 400px;
+}
+
+
+/* .project-content .container-wireframe {
+    background-color: pink;
+} */
+
+.container-wireframe img {
+    display: flex;
+    place-items: center;
+    width: 400px;
+}
+
+.container-mockups img {
+    display: flex;
+    place-items: center;
+    width: 400px;
+}
+
+
 
 /* FOOTER */
 footer {
@@ -232,6 +268,59 @@ footer {
     }
 }
 
+@media screen and (min-width: 500px) {
+    .competitive-analysis img {
+        width: 500px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .container-wireframe img {
+        width: 500px;
+    }
+
+    .user-persona img {
+        width: 300px;
+        height: auto;
+    }
+
+    .container-design img {
+        width: 400px;
+    }
+
+    .container-mockups img {
+        display: flex;
+        place-items: center;
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .competitive-analysis img {
+        width: 600px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .container-wireframe img {
+        width: 600px;
+    }
+
+    .container-design img {
+        width: 500px;
+    }
+
+    .container-mockups img {
+        display: flex;
+        place-items: center;
+        width: 600px;
+    }
+}
+
 /* for viewport */
 @media screen and (min-width: 1000px) {
     .navigation {
@@ -245,5 +334,16 @@ footer {
     }
     .connect-wrapper {
         max-width: 80vw;
+    }
+}
+
+/* for viewport */
+@media screen and (min-width: 1200px) {
+
+    .cover-content {
+        max-width: 60vw;
+    }
+    .main-content {
+        max-width: 60vw;
     }
 }

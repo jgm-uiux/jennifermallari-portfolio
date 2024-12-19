@@ -6,10 +6,11 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: "alwyn-new-rounded-web", sans-serif;
     background-color: white;
     color: #404040;
 }
+
 
 
 /* HOMEPAGE */
@@ -50,7 +51,7 @@ nav ul {
     color: #FFFFFF ;
     font-size: 18px;
 }
-ß
+
 .projects-nav ul li a:hover {
     color: #004750;
 }
@@ -128,7 +129,7 @@ nav ul {
 
 .name{
     font-size: 60px;
-    color: #FFFFFF;
+    color: #004750;
     margin: 20px 0;
 }
 
@@ -138,13 +139,13 @@ nav ul {
 }
 
 .location {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
 /* MAIN */
 .homepage {
-    width: 90vw;
+    width: 80vw;
     margin: 0 auto;
     align-items: center;
 
@@ -159,7 +160,7 @@ nav ul {
     font-size: 40px;
     letter-spacing: 2px;
     margin: 0px 0px;
-    color: #404040;
+    color: #004750;
 
     text-transform: uppercase;
     font-weight: 800;
@@ -168,7 +169,7 @@ nav ul {
 .tagline p {
     margin: 0px 0px 30px 0;
     font-size: 22px;
-    color: #5A5A5A;
+    color: #004750;
 }
 .project-text {
     grid-column: 1/2;
@@ -208,7 +209,8 @@ nav ul {
 }
 
 .view-project {
-    background-color: #536E7D;
+    font-family: "alwyn-new-rounded-web", sans-serif;
+    background-color: #004750;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -217,14 +219,13 @@ nav ul {
 
 .view-project a {
     text-decoration: none;
-    text-transform: uppercase;
+    font-family: "alwyn-new-rounded-web", sans-serif;
     font-size: 16px;
-    letter-spacing: 2px;
     color: white;
 }
 
 .view-project:hover {
-    background-color: #004750;
+    background-color: #68899C;
 }
 
 .product-image {

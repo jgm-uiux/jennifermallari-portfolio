@@ -111,6 +111,33 @@ body {
     display: none;
 }
 
+.content-sub {
+    font-size: 20px;
+    margin: 0;
+    /* padding: 10px 0; */
+}
+
+.project-content {
+    margin-top: 20px;
+}
+
+.project-content p {
+    margin: 10px 0px 20px 0;
+}
+
+.competitive-analysis, .sub-parts {
+    margin: 0 0 0 20px;
+}
+
+.research-section {
+    margin-bottom: 10px;
+}
+
+.research-section h4, .screens h4, .branding h4 {
+    margin: 20px 0 10px 0px;
+    font-size: 18px;
+}
+
 .main-content {
     width: 90vw;
     margin: 0 auto;
@@ -119,7 +146,7 @@ body {
     margin-bottom: 50px;
 }
 
-.competitive-analysis img {
+.competitive-analysis img, .screens img, .branding img {
     width: 400px;
     height: auto;
     margin: 0 auto;
@@ -258,6 +285,13 @@ footer {
         align-self: start;
     }
 
+    .screens img {
+        width: auto;
+        height: 300px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
 
     .connect-wrapper {
         display: grid;

@@ -9,6 +9,10 @@ body {
 
 
 /* NAVIGATION */
+
+header {
+    background-color: #E1E7EB;
+}
 .penguin-logo img{
     width: 60px;
     height: auto;
@@ -35,11 +39,60 @@ body {
 .projects-nav ul li a {
     text-decoration: none;
     font-size: 18px;
-    color: #68899C;
+    color: #004750;
+  
 }
 
 .projects-nav ul li a:hover {
+    color: #68899C;
+}
+
+.projects-nav ul li a:active {
+    color: #FFFFFF;
+}
+
+.projects-nav ul li a:focus {
+    color: #FFFFFF;
+}
+
+/********************************************** CATEGORIES */
+.project-categories {
+    margin: 0 auto;
+}
+
+.categories ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    justify-content: space-between;
+}
+
+.categories ul li {
+    max-width: 20vw;
+}
+
+.categories ul li button {
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #004750;
+    background-color: #FFFFFF;
+}
+
+.categories ul li button:hover {
+    background-color: #004750;
+
+    > a {
+        color: #FFFFFF;
+    }
+}
+
+.categories ul li button a {
+    text-decoration: none;
+    font-size: 18px;
     color: #004750;
+    text-transform: uppercase;
 }
 
 
@@ -51,6 +104,7 @@ body {
     margin: 0 auto;
     align-items: center;
 
+    padding-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -145,7 +199,7 @@ body {
 
 /* FOOTER */
 footer {
-    background-color:#F0F3F5;
+    background-color:#E1E7EB;
     display: block;
     margin: 0 auto;
 }
@@ -240,14 +294,18 @@ footer {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .navigation {
-        max-width: 80vw;
+        max-width: 70vw;
     }
     .project-items {
-        max-width: 80vw;
+        max-width: 70vw;
     }
     .connect-wrapper {
-        max-width: 80vw;
+        max-width: 70vw;
+    }
+
+    .project-categories {
+        max-width: 70vw;
     }
 }

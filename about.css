@@ -108,6 +108,11 @@ nav ul {
 
 
 /* MAIN */
+
+h2 {
+    color: #004750;
+}
+
 .about-section {
     margin: 0 auto;
     max-width: 90vw;
@@ -235,15 +240,16 @@ footer {
 
 @media screen and (min-width: 1000px) {
     .navigation {
-        max-width: 80vw;
+        max-width: 70vw;
     }
     .about-section {
-        max-width: 60vw;
+        max-width: 70vw;
     }
     .connect-wrapper {
-        max-width: 80vw;
+        max-width: 70vw;
     }
     .profile img {
-        width: 900px;
+        width: 100%;
+        height: auto;
     }
 }

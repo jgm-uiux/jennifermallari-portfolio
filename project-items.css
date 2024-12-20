@@ -237,7 +237,7 @@ footer {
 
     .container-nav ul li a {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 19px;
 
         color:#68899C;
     }
@@ -324,16 +324,16 @@ footer {
 /* for viewport */
 @media screen and (min-width: 1000px) {
     .navigation {
-        max-width: 80vw;
+        max-width: 70vw;
     }
     .cover-content {
-        max-width: 80vw;
+        max-width: 70vw;
     }
     .main-content {
-        max-width: 80vw;
+        max-width: 70vw;
     }
     .connect-wrapper {
-        max-width: 80vw;
+        max-width: 70vw;
     }
 }
 
@@ -341,9 +341,9 @@ footer {
 @media screen and (min-width: 1200px) {
 
     .cover-content {
-        max-width: 60vw;
+        max-width: 70vw;
     }
     .main-content {
-        max-width: 60vw;
+        max-width: 70vw;
     }
 }

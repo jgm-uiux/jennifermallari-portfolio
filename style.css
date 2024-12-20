@@ -157,7 +157,6 @@ nav ul {
     margin: 0 auto;
     align-items: center;
 
-    margin-bottom: 50px;
 }
 
 .majors {
@@ -183,6 +182,10 @@ nav ul {
     grid-column: 1/2;
     justify-content: left;
     align-self: center;
+}
+
+.product-image {
+    border-radius: 10px;
 }
 
 .majors:nth-of-type(2) .product-image {

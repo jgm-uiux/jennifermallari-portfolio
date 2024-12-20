@@ -12,4 +12,3 @@ function showMenu() {
 function closeMenu() {
   document.querySelector('.nav-list-container').classList.remove("open");
 }
-  

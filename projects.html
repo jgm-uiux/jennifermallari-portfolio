@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/zrf4hff.css">
-    <script src="script.js" defer></script>
+    <script src="projects-script.js" defer></script>
     <link rel="stylesheet" href="projects.css">
 </head>
 <body>
@@ -35,67 +35,51 @@
 
 
         <div class="project-categories">
-            <nav class="categories">
-                <ul>
-                    <li>
-                        <button>
-                            <a href="#all">
-                                All
-                            </a>
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            <a href="#uiuxdesign">
-                                UI/UX Design
-                            </a>
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            <a href="#designstudy">
-                                Design Study
-                            </a>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+            <button class="category-btn active" onclick="filterSelection('all')">
+                <span>All</span>
+            </button>
+            <button class="category-btn" onclick="filterSelection('uiux-design')">
+                <span>UI/UX Design</span>
+            </button>
+            <button class="category-btn" onclick="filterSelection('design-study')">
+                <span>Design Study</span>
+            </button>
         </div>
     </header>
 
     <main class="project-items">
-        <a class="project-link" href="../projects/glucofit.html">
+        <a class="project-link uiux-design" href="../projects/glucofit.html">
             <div class="project-image">
                 <img src="../images/glucofit-logo.png" alt="glucofit-logo">
             </div>
         </a>
 
 
-        <a class="project-link" href="../projects/cocotrade.html">
+        <a class="project-link uiux-design" href="../projects/cocotrade.html">
             <div class="project-image">
                 <img src="../images/cocotrade-logo.png" alt="cocotrade-logo">
             </div>
         </a>
 
-        <a class="project-link" href="../projects/stashaway.html">
+        <a class="project-link uiux-design" href="../projects/stashaway.html">
             <div class="project-image">
                 <img src="../images/stashaway-logo.png" alt="stashaway-logo">
             </div>
         </a>
 
-        <a class="project-link" href="#">
+        <a class="project-link design-study" href="#">
             <div class="project-image">
                 <img src="../images/penguin-logo.png" alt="penguin-logo">
             </div>
         </a>
 
-        <a class="project-link" href="#">
+        <a class="project-link design-study" href="#">
             <div class="project-image">
                 <img src="../images/earnest-logo.png" alt="earnest-logo">
             </div>
         </a>
 
-        <a class="project-link" href="#">
+        <a class="project-link design-study" href="#">
             <div class="project-image">
                 <img src="../images/breka-logo.png" alt="breka-logo">
             </div>

@@ -1,0 +1,377 @@
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: "alwyn-new-rounded-web", sans-serif;
+    background-color: white;
+    color: black;
+}
+
+
+/*************************************************** MOBILE VIEW */
+
+/* viewport */
+.hero, .contactme-section {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* main-header */
+.cover{
+    position: relative;
+    /* height: 100vh; */
+    overflow: hidden;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    max-width: 90vw;
+    margin: 0 auto;
+    background-color: white;
+}
+h1 {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.penguin-logo img {
+    width: 50px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.main-nav {
+    display: none;
+}
+
+/* navigation */
+.nav-button:hover {
+    cursor: pointer;
+}
+/* navigation container */
+.nav-list-container {
+    display: none;
+    font-size: 24px;
+}
+.nav-button:hover {
+    cursor: pointer;
+}
+.nav-list-container {
+    display: none;
+    font-size: 24px;
+}
+.nav-list-container.open {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  
+    background-color: #E3EEF5;
+}
+.nav-list-container.open ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 16px;
+  
+    text-align: center;
+}
+.nav-list-container.open a {
+    color: #003940;
+    line-height: 2;
+}
+.nav-list-container.open a:hover {
+    color: #81B6BF;
+}
+.nav-list-container.open a:active {
+    color: black;
+} 
+.nav-list-container.open #primary-nav-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+/* cover */
+.cover-description {
+    margin: 20px auto;
+}
+h2 {
+    margin: 20px 0 20px 0;
+}
+.cover-title {
+    color: #003940;
+    font-size: 24px;
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 700;
+}
+.cover-image img {
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* transform: translate(-50%, -50%); */
+    /* z-index: -2; */
+}
+.cover-subtitle h3 {
+    color: black;
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0px 0px;
+}
+.cover-details p {
+    font-size: 16px;
+    margin: 0px 0px 10px 0px;
+}
+.cover-description {
+    margin: 20px auto;
+}
+
+/* about project */
+.side-nav {
+    display: none;
+}
+.content h4 {
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+    margin: 20px 0 0px 0;
+}
+.content p {
+    margin: 10px 0px 20px 0;
+}
+.sub-parts {
+    margin: 0 0 0 20px;
+}
+.screens h4, .branding h4 {
+    margin: 20px 0 10px 0px;
+    font-size: 18px;
+}
+
+.main-content {
+    width: 90vw;
+    margin: 0 auto;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.sub-parts img, .screens img, .branding img, .linkedin img, .one-pager img {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.user-persona img {
+    width: 400px;
+    height: auto;
+}
+
+.container-design img {
+    width: 400px;
+}
+
+
+/* .content .container-wireframe {
+    background-color: pink;
+} */
+
+.container-wireframe img {
+    display: flex;
+    place-items: center;
+    width: 400px;
+}
+
+.container-mockups img {
+    display: flex;
+    place-items: center;
+    width: 400px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #FBFDFD;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px 0px;
+}
+.contactme-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px 20px 0px;
+}
+.contactme-title {
+    font-family: "museo-sans-rounded", sans-serif;
+    font-size: 24px;
+    margin: 10px 0px;
+    color: #003940;
+}
+.links {
+    display: flex;
+    gap: 40px;
+
+    font-size: 16px;
+}
+.links a {
+    color: #003940;
+    text-decoration: none;
+    font-weight: 600;
+
+    position: relative;
+    text-wrap: balance;
+    transition: ease-in-out 0.2s;
+}
+.links a:hover {
+    color: #81B6BF;
+}
+
+
+
+
+
+
+
+
+
+/****************************************************** WEBSITE VIEW */
+
+/* MQ 600px */
+@media screen and (min-width: 600px) {
+    .nav-button {
+        display: none;
+    }
+    .penguin-logo img{
+        width: 50px;
+        height: auto;
+    }
+    .main-nav {
+        display: flex;
+    }
+    .main-nav ul {
+        list-style-type: none;
+    
+        display: flex;
+        gap: 32px;
+    }
+    .main-nav ul li a {
+        text-decoration: none;
+        font-family: 'museo sans rounded', serif;
+        font-size: 18px;
+        color:#003940;
+        z-index: 2;
+    }
+    .main-nav ul li a:hover {
+        color: #68899C;
+    }
+    
+
+    /* .cover-content {
+    position: relative;
+    z-index: 2;
+    color: #003940;
+    text-align: left;
+    max-width: 90vw;
+    margin: 100px auto;
+} */
+
+    /* OVERLAY */
+    .cover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+        z-index: -1; /* Ensure it sits above the image but below the content */
+    }
+}
+
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* MEDIA QUERY ********************************************************** */
+@media screen and (min-width: 900px) {
+    .side-nav {
+        display: block;
+        align-self: start;
+        position: sticky;
+        top: 0;
+        height: max-content;
+        z-index: 10;
+    }
+
+    .nav-wrapper {
+        margin-bottom: 50px;
+    }
+
+    .sub-nav {
+        margin: 20px 0px 10px 0px;
+    }
+
+    .container-nav ul {
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+    }
+
+    .container-nav ul li {
+        margin: 5px 0px;
+    }
+
+    .container-nav ul li a {
+        text-decoration: none;
+        font-size: 19px;
+
+        color:#68899C;
+    }
+
+    .container-nav ul li a:hover {
+        color: #004750;
+    }
+
+    .main-wrapper {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 150px 1fr;
+
+        max-width: 90vw;
+    }
+
+    .main-content {
+        align-self: start;
+    }
+
+    .screens img {
+        width: auto;
+        height: 300px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .connect-wrapper {
+        display: grid;
+        gap: 500px;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding: 30px 0 20px 0;
+    }
+}

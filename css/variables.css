@@ -1,0 +1,21 @@
+
+:root {
+  /* TODO: define variables here */
+
+  --layout--max-width: 1200px;
+  --layout--small-spacing: 0.6rem;
+  --layout--medium-spacing: 1.2rem;
+  --layout--large-spacing: 2.5rem;
+  --layout--extra-large-spacing: 6rem;
+  
+  --typography--font-size--extra-large: 5.5rem;
+  --typography--font-size--large: 3rem;
+  --typography--font-size--medium: 1.5rem;
+  --typography--font-size--small: 0.8rem;
+
+  --colors--background: white;
+  --colors--text: rgb(25 25 40);
+  --colors--primary:  rgb(120 40 80);
+  --colors--secondary: rgb(210 190 160);
+  --colors--tertiary: rgb(90 120 110);
+}

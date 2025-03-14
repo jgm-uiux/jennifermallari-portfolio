@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Mallari</title>
+    <link rel="icon" type="image/png" href="../images/penguin-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/zrf4hff.css">
+    <script src="https://kit.fontawesome.com/b479c2d499.js" crossorigin="anonymous"></script>
+    <script src="../function.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <!-- jennifer mallari header and hero-section -->
+    <header class="hero">
+        <!-- navigation -->
+        <div class="main-header">
+            <h1 class="penguin-logo">
+                <a href="index.html">
+                    <img src="../images/penguin-logo.png" alt="jennifermallari-logo">
+                </a>
+            </h1>
+        
+            <!-- main navigation -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/pages/projects.html">Projects</a></li>
+                    <!-- <li><a href="#gallery">Gallery</a></li> -->
+                    <li><a href="">About</a></li>
+                    <li><a href="mailto:jennifergmallari@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- navigation-menu button -->
+            <div class="nav-button">
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                <div class="nav-list-container" onclick="closeMenu()">
+                    <button id="primary-nav-close" onclick="closeMenu()">&times;</button>
+                    <ul>
+                        <li><a href="../pages/projects.html">Projects</a></li>
+                        <!-- <li><a href="#gallery">Gallery</a></li> -->
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- hero-section -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="../images/penguin-background.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+            <h2 class="name">Hi I'm Jennifer Mallari!</h2>
+            <p class="bio">A UI/UX designer based in Vancouver, BC with 5 years of experience in satellite engineering, driven in combining design skills and technical expertise to create human-centred solutions that helps connect complex systems with user needs. Skilled in front-end development, user research, usability testing, wireframing, prototyping, and design systems.</p>
+
+            <!-- scroll down button -->
+            <button class="scroll-down" id="scroll-down-btn">
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- projects -->
+    <main class="projects-wrapper">
+        <!-- project 1 brief -->
+        <section class="projects">
+            <div class="project-content">
+                <h3 class="project-title">Glucofit</h3>
+                <div class="project-subtitle">
+                    <p>Your everyday guide to balanced glucose health.</p>
+                </div>
+                <div class="category-tabs">
+                    <div class="tabs">
+                        <a href="">Project Management</a>
+                    </div>
+                    <div class="tabs">
+                        <a href="">UI/UX Design</a>
+                    </div>
+                    <div class="tabs">
+                        <a href="">Mobile App</a>
+                    </div>
+                </div>
+                <p class="project-description">Glucofit is a mobile app for people with diabetes to help them monitor their blood sugar level through automated glucose logging and personalized insights and gamification to keep users motivated.</p>
+                
+                <!-- <button class="view-project" id="glucofit-page-btn">
+                    <a href="../projects/glucofit.html">
+                        View Project
+                        <i class="fa-solid fa-arrow-right"></i></a>
+                </button> -->
+            </div>
+
+            <!-- view project button -->
+            <button class="view-project">
+                <a href="../pages/projects/glucofit.html">
+                <div class="project-image">
+                    <img src="../images/glucofit-logo.png" alt="glucofit-logo">
+                </div>
+                </a>
+            </button>
+        </section>
+
+        <!-- project 2 brief -->
+        <section class="projects">
+            <div class="project-content">
+                <h3 class="project-title">CocoTrade</h3>
+                <div class="project-subtitle">
+                    <p>One stop platform to streamline your copra trading.</p>
+                </div>
+                <div class="category-tabs">
+                    <div class="tabs">
+                        <a href="">UI/UX Design</a>
+                    </div>
+                    <div class="tabs">
+                        <a href="">Responsive Web App</a>
+                    </div>
+                </div>
+                <p class="project-description">CocoTrade is a web app designed to modernize and streamline the operations of small and medium-sized copra trading businesses, particularly in Southeast Asia.</p>
+                
+            </div>
+
+            <!-- view project button -->
+            <button class="view-project">
+                <a href="/pages/projects/cocotrade.html">
+                <div class="project-image">
+                    <img src="../images/cocotrade-logo.png" alt="cocotrade-logo">
+                </div>
+                </a>
+            </button>
+        </section>
+
+        <!-- project 3 brief -->
+        <section class="projects">
+            <div class="project-content">
+                <h3 class="project-title">Stashaway</h3>
+                <div class="project-subtitle">
+                    <p>Store smart, live light.</p>
+                </div>
+                <div class="category-tabs">
+                    <div class="tabs">
+                        <a href="">UI/UX Design</a>
+                    </div>
+                    <div class="tabs">
+                        <a href="">Web & Mobile App</a>
+                    </div>
+                </div>
+                <p class="project-description">An app that lets you easily find, book, and manage self-storage units, with the added convenience of seamless pickup and delivery services for your items.</p>
+            </div>
+
+            <!-- view project button -->
+            <button class="view-project">
+                <a href="../projects/glucofit.html">
+                <div class="project-image">
+                    <img src="../images/stashaway-logo.png" alt="stashaway-logo">
+                </div>
+                </a>
+            </button>
+        </section>
+
+    </main>
+
+    <!-- footer and contacts -->
+    <footer>
+        <div class="contactme-section">
+            <div class="contactme-wrapper">
+                <h3 class="contactme-title">Let's connect!</h3>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/jennifergmallari/">
+                        <i aria-hidden="true" title="Linkedin"></i>
+                            <span>Linkedin</span>
+                    </a>
+                    <a href="../docs/mallarijenniferg-resume1.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+
+            <div class="contactme-wrapper">
+                <h3 class="contactme-title">Contact Me</h3>
+                <div class="links">
+                    <a href="mailto:jennifergmallari@gmail.com">jennifergmallari@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
+

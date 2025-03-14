@@ -1,0 +1,573 @@
+/* gf #E3E9FE 
+ct #FEF1E8
+sa #C3CDD1 */
+
+body {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    color: black;
+}
+
+
+/*************************************************** MOBILE VIEW */
+
+/* viewport */
+.main-header, .projects-wrapper, .contactme-section {
+    width: 90vw;
+    margin: 0 auto;
+}
+.hero {
+    position: relative;
+    /* height: 100vh; */
+    overflow: hidden;
+}
+
+/* main header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.penguin-logo img{
+    width: 50px;
+    height: auto;
+}
+.main-nav {
+    display: none;
+}
+
+/* navigation */
+.nav-button:hover {
+    cursor: pointer;
+}
+
+/* navigation container */
+.nav-list-container {
+    display: none;
+    font-size: 24px;
+}
+
+.nav-list-container.open {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  
+    background-color: #E3EEF5;
+}
+.nav-list-container.open ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 16px;
+  
+    text-align: center;
+}
+.nav-list-container.open a {
+    color: #003940;
+    line-height: 2;
+}
+.nav-list-container.open a:hover {
+    color: #81B6BF;
+}
+.nav-list-container.open a:active {
+    color: black;
+} 
+.nav-list-container.open #primary-nav-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+/* hero section */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: black;
+    text-align: center;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.name{
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #003940;
+    margin: 20px 0;
+}
+.bio {
+    font-size: 20px;
+    margin: 20px 0 40px 0;
+    color: black;
+}
+.scroll-down {
+    display: none;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 20px 0;
+}
+.project-title {
+    font-family: "museo-sans-rounded", sans-serif;
+    font-size: 32px;
+    margin: 0px 0px;
+    color: #003940;
+    font-weight: 700;
+}
+.project-subtitle p {
+    font-family:"museo-sans-rounded", sans-serif;
+    font-size: 20px;
+    color: #003940;
+
+    margin: 0px 0px 20px 0;
+}
+.project-text {
+    grid-column: 1/2;
+    justify-content: left;
+    align-self: center;
+}
+.project-description {
+    font-size: 18px;
+    margin: 20px 0;
+}
+.project-image {
+    border-radius: 10px;
+}
+.project-image img {
+    width: 140px;
+    height: auto;
+}
+.projects:nth-of-type(1) .project-image {
+    background-color: #E3E9FE;
+}
+.projects:nth-of-type(2) .project-image {
+    background-color: #FEF1E8;
+}
+.projects:nth-of-type(3) .project-image {
+    background-color: #F9DAE0;
+}
+
+/* category tabs */
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.tabs a {
+    background-color: #003940;
+    padding: 8px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+/* view project button*/
+.view-project {
+    border: none;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+}
+.view-project a {
+    width: 100%;
+}
+.project-image {
+    /* grid-column: 2/2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 420px;
+    /* border-radius: 10px; */
+}
+
+/* FOOTER */
+footer {
+    background-color: #FBFDFD;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px 0px;
+}
+.contactme-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px 20px 0px;
+}
+.contactme-title {
+    font-family: "museo-sans-rounded", sans-serif;
+    font-size: 32px;
+    margin: 10px 0px;
+    color: #003940;
+}
+.links {
+    display: flex;
+    gap: 40px;
+
+    font-size: 18px;
+}
+.links a {
+    color: #003940;
+    text-decoration: none;
+    font-weight: 600;
+
+    position: relative;
+    text-wrap: balance;
+    transition: ease-in-out 0.2s;
+}
+.links a:hover {
+    color: #81B6BF;
+}
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************** WEBSITE VIEW */
+
+/* MQ 600px */
+@media screen and (min-width: 600px) {
+    /* VIEWPORT */
+    .main-header, .projects-wrapper, .contactme-section {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        max-width: 80vw;
+    }
+
+    .penguin-logo img{
+        width: 60px;
+        height: auto;
+    }
+
+    /* NAVIGATION */
+    .nav-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+    }
+
+    .main-nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 32px;
+    }
+
+    .main-nav ul li a {
+        font-family: "museo-sans-rounded", sans-serif;
+        text-decoration: none;
+        color: #004750 ;
+        font-size: 18px;
+    }
+
+    .main-nav ul li a:hover {
+        color: #68899C;
+    }
+
+    .main-nav ul li a:active {
+        color: #FFFFFF;
+    }
+
+    .projects {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    
+    .name{
+        font-family: "museo-sans-rounded", sans-serif;
+        font-weight: 700;
+        font-size: 65px;
+        color: #003940;
+        margin: 20px 0;
+    }
+    
+    .bio {
+        font-size: 25px;
+        margin: 20px 0 10px 0;
+        color: black;
+    }
+
+
+    /* MAIN PROJECTS */
+    .projects {
+        padding: 50px 0;
+    }
+
+    .project-title {
+        font-family: "museo-sans-rounded", sans-serif;
+        font-size: 40px;
+        margin: 0px 0px;
+        color: #003940;
+        font-weight: 700;
+    }
+
+    .project-subtitle p {
+        font-family:"museo-sans-rounded", sans-serif;
+        font-size: 22px;
+        color: #003940;
+
+        margin: 0px 0px 20px 0;
+    }
+
+    .project-text {
+        grid-column: 1/2;
+        justify-content: left;
+        align-self: center;
+    }
+
+    .project-description {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    /* CATEGORY TABS */
+    .category-tabs {
+        display: flex;
+        gap: 16px;
+    }
+    
+    .tabs a {
+        background-color: #003940;
+        padding: 8px 15px;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    /* VIEW PROJECT BUTTON */
+    .view-project {
+        border: none;
+        width: 100%;
+        padding: 0;
+        background-color: transparent;
+    }
+    
+    .view-project a {
+        width: 100%;
+    }
+
+    /* scroll down */
+    .scroll-down {
+        display: inline-block;
+        margin-top: 50px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF;
+        background-color: #003940;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .scroll-down:hover {
+        background-color: #55707f;
+        transform: translateY(-2px);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MQ 768px */
+@media screen and (min-width: 768px) {
+    /* VIEWPORT */
+    .main-header, .projects-wrapper, .contactme-section {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .hero-content {
+        max-width: 70vw;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    
+    .name{
+        font-family: "museo-sans-rounded", sans-serif;
+        font-weight: 700;
+        font-size: 70px;
+        color: #003940;
+        margin: 20px 0;
+    }
+    
+    .bio {
+        font-size: 30px;
+        margin: 20px 0 10px 0;
+        color: black;
+    }
+
+    .projects {
+        display: grid;
+    }
+    
+    .projects:nth-of-type(2) .project-image {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    
+    .projects:nth-of-type(2) .project-text {
+        grid-column: 2/2;
+        grid-row: 1;
+    }
+
+
+    .contactme-section {
+        display: grid;
+        gap: 200px;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding: 30px 0 20px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+/* @media screen and (min-width: 1000px) {
+    .main-header {
+        max-width: 70vw;
+    }
+    .homepage{
+        max-width: 70vw;
+    }
+    .contactme-section {
+        max-width: 70vw;
+    }
+
+    .bio {
+        max-width: 60vw;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    .name{
+        font-size: 70px;
+    }
+    
+    .bio {
+        font-size: 28px;
+    }
+    
+    .location {
+        font-size: 24px;
+    }
+} */
+
+
+
+/* @media screen and (min-width: 800px) {
+
+    .main-nav {
+        display: block;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .projects {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr 1fr ;
+    }
+} */
+/* 
+@media screen and (min-width: 1300px) {
+
+    .projects {
+        display: grid;
+        gap: 150px;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .contactme-section {
+        display: grid;
+        gap: 200px;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding: 30px 0 20px 0;
+    }
+} */

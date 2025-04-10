@@ -117,12 +117,12 @@ body {
 .name{
     font-family: "museo-sans-rounded", sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 44px;
     color: #003940;
     margin: 20px 0;
 }
 .bio {
-    font-size: 24px;
+    font-size: 20px;
     margin: 20px 0 40px 0;
     color: black;
 }

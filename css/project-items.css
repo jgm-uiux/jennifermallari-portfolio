@@ -1,8 +1,10 @@
 body {
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
-    font-family: "alwyn-new-rounded-web", sans-serif;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: white;
     color: black;
 }
@@ -10,13 +12,13 @@ body {
 
 /*************************************************** MOBILE VIEW */
 
-/* viewport */
+/* VIEWPORT */
 .hero, .contactme-section {
     width: 90vw;
     margin: 0 auto;
 }
 
-/* main-header */
+/* MAIN HEADER */
 .cover{
     position: relative;
     /* height: 100vh; */
@@ -46,11 +48,11 @@ h1 {
     display: none;
 }
 
-/* navigation */
+/* NAVIGATION */
 .nav-button:hover {
     cursor: pointer;
 }
-/* navigation container */
+/* NAVIGATION CONTAINER */
 .nav-list-container {
     display: none;
     font-size: 24px;
@@ -98,14 +100,15 @@ h1 {
     z-index: 100;
 }
 
-/* cover */
+/* HERO COVER */
 .cover-description {
     margin: 20px auto;
 }
 h2 {
     margin: 20px 0;
 }
-.cover-title {
+
+.cover-title-web, .cover-title-mobile {
     color: #003940;
     font-size: 24px;
     font-family: "museo-sans-rounded", sans-serif;
@@ -113,18 +116,21 @@ h2 {
 
     display: flex;
     flex-direction: row;
-    place-items: center;
+    place-items: baseline;
     gap: 8px;
 }
 
-.cover-title a {
+.cover-title-web a, .cover-title-mobile a {
     color: #003940;
 }
 
-.cover-title i:hover {
+.cover-title-web i:hover, .cover-title-mobile i:hover {
     color: #81B6BF;
     cursor: pointer;
+}
 
+.cover-title-web {
+    display: none;
 }
 
 .cover-image img {
@@ -153,7 +159,7 @@ h2 {
     margin: 20px auto 50px auto;
 }
 
-/* project */
+/* PROJECT */
 .main-content {
     width: 90vw;
     margin: 0 auto;
@@ -179,6 +185,15 @@ h2 {
     font-size: 32px;
     margin-top: 40px;
 }
+
+.subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #959595;
+}
+
 .content-sub {
     font-family: "museo-sans-rounded", sans-serif;
     font-weight: 700;
@@ -225,6 +240,13 @@ h2 {
     padding: 0;
 }
 
+.user-interviews, .user-personas, .competitor-analysis, .low-fidelity, .high-fidelity {
+    display: flex;
+    flex-direction: column;
+    place-items: flex-start;
+    gap: 5px;
+}
+
 .persona {
     margin: 20px 0;
     padding: 20px 0;
@@ -237,9 +259,11 @@ h2 {
     gap: 20px;
 }
 
-.persona img, .competitor img, .userflow-image img {
+.persona img, .competitor img, .userflow-image img, .lo-fi-wireframes img, .hi-fi-wireframes img, .project-images img {
     max-width: 90%;
     height: auto;
+    min-width: 280px;
+    width: auto;
 }
 
 .competitor {
@@ -266,8 +290,6 @@ h2 {
 
 .lo-fi-wireframes img, .hi-fi-wireframes img {
     margin: 10px 0;
-    max-width: 100%;
-    height: auto;
 }
 
 .screens h6 {
@@ -313,7 +335,7 @@ footer {
     transition: ease-in-out 0.2s;
 }
 .links a:hover {
-    color: #81B6BF;
+    color: #186973;
 }
 
 
@@ -328,77 +350,109 @@ footer {
 
 /* MQ 600px */
 @media screen and (min-width: 600px) {
+
+    .main-header, .cover-content, .main-wrapper, .main-content, .contactme-section {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .penguin-logo img{
+        width: 60px;
+        height: auto;
+    }
+
+    .timeline-images, .persona {
+        flex-direction: row;
+    }
+
+    .content-sub {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .cover-subtitle h3 {
+        font-size: 16px;
+    }
+
+    .cover-details p {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #959595;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    /* NAVIGATION */
     .nav-button {
         display: none;
     }
-    .penguin-logo img{
-        width: 50px;
-        height: auto;
-    }
+
     .main-nav {
         display: flex;
     }
+
     .main-nav ul {
         list-style-type: none;
-    
         display: flex;
         gap: 32px;
     }
+
     .main-nav ul li a {
+        font-family: "museo-sans-rounded", sans-serif;
         text-decoration: none;
-        font-family: 'museo sans rounded', serif;
+        color: #004750 ;
         font-size: 18px;
-        color:#003940;
-        z-index: 2;
     }
+
     .main-nav ul li a:hover {
-        color: #68899C;
+        color: #186973;
     }
 
+    .main-nav ul li a:active {
+        color: #FFFFFF;
+    }
 
-
-
-    .timeline-images {
+    .contactme-section {
         display: flex;
-        flex-direction: row;
-        padding: 20px;
-        background-color: #F9FAFF;
-        border-radius: 10px;
     }
-    
-    .image {
-        display: flex;
-        place-content: center;
-        place-items: center;
-        height: 300px;
-    }
-    
-    .image img {
-        width: 85%;
-        height: 85%;
-        object-fit: cover;
-    }
-    
 
-    /* .cover-content {
-    position: relative;
-    z-index: 2;
-    color: #003940;
-    text-align: left;
-    max-width: 90vw;
-    margin: 100px auto;
-} */
+    .contactme-section {
+        gap: 200px;
+    }
 
-    /* OVERLAY */
-    .cover::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
-        z-index: -1; /* Ensure it sits above the image but below the content */
+    .contactme-section h3 {
+        font-size: 32px;
+    }
+
+    .links {
+        font-size: 20px;
+        font-weight: semibold;
+    }
+}
+
+@media screen and (min-width: 979px) {
+
+    /* VIEWPORT */
+
+
+    .contactme-section {
+        gap: 200px;
+    }
+
+    .contactme-section h3 {
+        font-size: 32px;
     }
 }
 
@@ -406,16 +460,76 @@ footer {
 
 
 
-
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* MEDIA QUERY ********************************************************** */
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1599px) {
 
+    /* VIEWPORT */
+    .main-header, .cover-content, .main-wrapper, .main-content, .contactme-section {
+        width: 80vw;
+        margin: 0 auto;
+    }
 
+    .main-nav ul li {
+        display: block;
+    }
 
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        width: 100vw;
+    }
 
+    .main-header {
+        background-color: transparent;
+        position: relative;
+        z-index: 2;
+    }
 
+    .cover-image {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
 
+    .cover-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .cover-content {
+        margin-top: 180px;
+    }
+
+    .cover-title-mobile {
+        display: none;
+    }
+
+    .cover-title-web {
+        display: flex;
+    }
+    .cover-title-web {
+        place-items: baseline;
+    }
+
+    .cover-title-web h2 {
+        font-size: 64px;
+    }
+
+    .cover-subtitle h3 {
+        font-size: 16px;
+    }
+
+    .cover-details p {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
 
     .side-nav {
         display: block;
@@ -428,6 +542,13 @@ footer {
 
     .nav-wrapper {
         margin-bottom: 50px;
+    }
+
+    .nav-wrapper h4 {
+        font-family: "museo-sans-rounded", sans-serif;
+        font-weight: 700;
+        color: #003940;
+        font-size: 40px;
     }
 
     .sub-nav {
@@ -447,9 +568,9 @@ footer {
 
     .container-nav ul li a {
         text-decoration: none;
-        font-size: 19px;
+        font-size: 20px;
 
-        color:#68899C;
+        color:#959595;
     }
 
     .container-nav ul li a:hover {
@@ -457,15 +578,20 @@ footer {
     }
 
     .main-wrapper {
-        display: grid;
-        gap: 50px;
-        grid-template-columns: 150px 1fr;
-
-        max-width: 90vw;
+        display: flex;
+        gap: 100px;
     }
 
     .main-content {
-        align-self: start;
+        margin-top: 73px;
+    }
+
+    /* .timeline-images {
+        flex-direction: row;
+    } */
+
+    .category-nav-title {
+        display: none;
     }
 
     .screens img {
@@ -476,11 +602,4 @@ footer {
         align-items: center;
     }
 
-    .connect-wrapper {
-        display: grid;
-        gap: 500px;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        padding: 30px 0 20px 0;
-    }
 }

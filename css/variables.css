@@ -1,21 +1,87 @@
 
 :root {
   /* TODO: define variables here */
+  /* Color styles */
+--bluegreen-60: #003940;
+--bluegreen-40: #186973;
+--bluegreen-0: #FBFDFD;
+--neutral-100: #000000;
+--neutral-80: #1B1B1B;
+--neutral-50: #5A5A5A;
+--neutral-40: #959595;
+--neutral-30: #C2C2C2;
+--neutral-10: #FFFFFF;
 
-  --layout--max-width: 1200px;
-  --layout--small-spacing: 0.6rem;
-  --layout--medium-spacing: 1.2rem;
-  --layout--large-spacing: 2.5rem;
-  --layout--extra-large-spacing: 6rem;
-  
-  --typography--font-size--extra-large: 5.5rem;
-  --typography--font-size--large: 3rem;
-  --typography--font-size--medium: 1.5rem;
-  --typography--font-size--small: 0.8rem;
+/* font size */
+/* MOBILE */
 
-  --colors--background: white;
-  --colors--text: rgb(25 25 40);
-  --colors--primary:  rgb(120 40 80);
-  --colors--secondary: rgb(210 190 160);
-  --colors--tertiary: rgb(90 120 110);
+--fz-xxx-large: 64px;
+--fz-xx-large: 42px;
+--fz-x-large: 32px;
+--fz-large: 28px;
+--fz-medium: 24px;
+--fz-regular: 20px;
+--fz-small: 18px;
+--fz-x-small: 16px;
+--fz-xx-small: 14px;
+
+/* font family */
+--primary-font: "museo-sans-rounded", sans-serif; 
+--secondary-font: "proxima-nova", sans-serif;
+
+
+/* font-weight  */
+--font-weight-regular: 400;
+--font-weight-medium: 500;
+--font-weight-semibold: 600;
+--font-weight-bold: 700;
+
+/* spacing */
+--spacing-0: 0px;
+--spacing-1: 4px;
+--spacing-2: 8px;
+--spacing-3: 12px;
+--spacing-4: 16px;
+--spacing-5: 20px;
+--spacing-6: 24px;
+--spacing-7: 28px;
+--spacing-8: 32px;
+--spacing-9: 36px;
+--spacing-10: 40px;
+--spacing-11: 44px;
+--spacing-12: 48px;
+--spacing-13: 52px;
+--spacing-14: 56px;
+--spacing-15: 60px;
+
+/* border radius */
+--border-radius-0: 0px;
+--border-radius-1: 4px;
+--border-radius-2: 8px;
+--border-radius-3: 12px;
+--border-radius-4: 16px;
+--border-radius-5: 20px;
+--border-radius-6: 24px;
+--border-radius-7: 28px;
+--border-radius-8: 32px;
+
+
+/* viewport */
+--large-viewport: 90vw;
+--medium-viewport: 80vw;
+--small-viewport: 70vw;
+
+/* Breakpoints */
+--breakpoint-mobile: 768px;
+--breakpoint-tablet: 1024px;
+--breakpoint-desktop: 1440px;
+--breakpoint-large-desktop: 1920px;
+
+/* Breakpoint for mobile */
+--mobile: 768px;
+
+/* Effect styles */
+--drop:  5px 7px 17.299999237060547px rgba(0, 0, 0, 0.25);
+--drop--shadow:  0px 4px 29.5px rgba(0, 0, 0, 0.15);
+
 }

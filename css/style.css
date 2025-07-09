@@ -1,6 +1,5 @@
-/* gf #E3E9FE 
-ct #FEF1E8
-sa #C3CDD1 */
+
+@import url("variables.css");
 
 html {
     scroll-behavior: smooth;
@@ -10,11 +9,10 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    font-family: "proxima-nova", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: white;
-    color: black;
+    font-family: var(--secondary-font);
+    font-weight: var(--font-weight-regular);
+    background-color: var(--neutral-10);
+    color: var(--neutral-100);
 }
 
 
@@ -22,7 +20,7 @@ body {
 
 /* viewport */
 .main-header, .projects-wrapper, .contactme-section {
-    width: 90vw;
+    width: var(--large-viewport);
     margin: 0 auto;
 }
 .hero {
@@ -55,7 +53,7 @@ body {
 /* navigation container */
 .nav-list-container {
     display: none;
-    font-size: 24px;
+    font-size: var();
 }
 
 .nav-list-container.open {
@@ -472,7 +470,7 @@ footer {
         font-family: "museo-sans-rounded", sans-serif;
         text-decoration: none;
         color: #004750 ;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .main-nav ul li a:hover {

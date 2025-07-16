@@ -12,7 +12,7 @@ body {
     font-family: var(--secondary-font);
     font-weight: var(--font-weight-regular);
     background-color: var(--neutral-10);
-    color: var(--neutral-100);
+    color: var(--neutral-70);
 }
 
 
@@ -479,6 +479,12 @@ footer {
 
     .main-nav ul li a:active {
         color: #FFFFFF;
+    }
+
+    .contactme-wrapper:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        place-items: flex-end;
     }
 
 }

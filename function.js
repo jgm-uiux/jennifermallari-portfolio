@@ -1,7 +1,7 @@
 document.getElementById("scroll-down-btn").addEventListener("click", smoothScroll);
 
 function smoothScroll() {
-  const element = document.getElementById("next-section");
+  const element = document.querySelector("main");
   element.scrollIntoView({ behavior: 'smooth' });
 }
 

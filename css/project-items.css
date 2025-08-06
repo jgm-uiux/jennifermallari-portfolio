@@ -206,7 +206,7 @@ h2 {
 }
 .content p {
     font-size: 16px;
-    margin: 5px 0px 20px 0;
+    margin: 0px 0px 10px 0;
 }
 
 /* TIMELINE */
@@ -286,7 +286,11 @@ h2 {
     gap: 100px;
 }
 
-.persona img, .competitor img, .userflow-image img, .sub-content-images img {
+#cocotrade-bg-color-images {
+    background-color: #F1F7F8;
+}
+
+.sub-content-images img {
     max-width: 90%;
     height: auto;
     width: auto;
@@ -389,7 +393,7 @@ footer {
     font-size: 16px;
 }
 .links a {
-    color: var(--bluegreen-60);
+    color: var(--neutral-40);
     text-decoration: none;
     font-weight: 600;
 
@@ -724,9 +728,9 @@ footer {
         gap: 100px;
     }
 
-    .main-content {
+    /* .main-content {
         margin-top: 55px;
-    }
+    } */
 
     /* .timeline-images {
         flex-direction: row;

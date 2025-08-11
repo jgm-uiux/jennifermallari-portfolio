@@ -314,7 +314,7 @@ h2 {
     background-color: #F9FAFF;
     display: flex;
     flex-direction: column;
-    /* gap: 50px; */
+    gap: 50px;
     place-content: center;
     place-items: center;
 }
